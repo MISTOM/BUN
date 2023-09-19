@@ -1,6 +1,5 @@
-console.log("Hello via Bun!");
+let port = Bun.env.PORT || 8080;
 
-let port = 8000;
 const server = Bun.serve({
     port,
     fetch(req){
