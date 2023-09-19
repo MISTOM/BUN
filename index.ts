@@ -1,5 +1,4 @@
 let port = Bun.env.PORT || 8080;
-
 const server = Bun.serve({
     port,
     fetch(req){
@@ -7,4 +6,5 @@ const server = Bun.serve({
     }
 
 })
+
 console.log(`Server started on port ${port}`);
